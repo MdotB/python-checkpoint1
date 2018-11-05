@@ -17,7 +17,8 @@
 #
 # Your Vehicle class should take one argument (a `dict`) with the above
 # attributes. The methods should be defined on the class.
-
+class Vehicle(object):
+    pass
 
 
 # #2: Create a Motorcycle class that inherits from the Vehicle class and has the
@@ -25,19 +26,27 @@
 # - `wheel_drive` 'str', defaults to "no wheels!"
 # - `pop_wheelie` 'bool', if `wheel_count` is not equal to 2 then it should be
 #   False
-
+class Motorcycle(Vehicle):
+    pass
 
 
 # #3: Define a Car class with the following attributes and methods:
 # - `wheel_drive` 'str', defaults to "no wheels!"
 # - `can_drive` that should return 'Vrrooooom Vroooom'
-
+class Car(Vehicle):
+    def __init__(self):
+        pass
 
 
 # #4: Define a Truck class with the following attributes and methods:
 # - `wheel_drive` 'str', defaults to "no wheels!"
 # - `rev_engine` that should return 'revvvvvreeeev'
+class Truck(Vehicle):
+    def __init__(self, wheel_count="no wheels!"):
+        self.wheel_count = wheel_count
 
+    def rev_engine(self):
+        return "revvvvvreeeev"
 
 
 # Commit when you finish working on these questions!
